@@ -20,6 +20,7 @@
 		EBF9B5131EB522810097531E /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBF9B5121EB522810097531E /* pokemon.ttf */; };
 		EBF9B5181EB5246D0097531E /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EBF9B5171EB5246D0097531E /* music.mp3 */; };
 		EBF9B51A1EB524760097531E /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = EBF9B5191EB524760097531E /* music.png */; };
+		EBF9B51C1EB5390B0097531E /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF9B51B1EB5390B0097531E /* PokemonDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		EBF9B5121EB522810097531E /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
 		EBF9B5171EB5246D0097531E /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		EBF9B5191EB524760097531E /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
+		EBF9B51B1EB5390B0097531E /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				EBF9B4DC1EB4E9180097531E /* PokemonVC.swift */,
+				EBF9B51B1EB5390B0097531E /* PokemonDetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -247,7 +250,7 @@
 					};
 					EBF9B4EA1EB4E9180097531E = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 8RD37RWZ37;
+						DevelopmentTeam = P23AMFJ96N;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = EBF9B4D61EB4E9180097531E;
@@ -319,6 +322,7 @@
 			files = (
 				EBF9B50F1EB516880097531E /* PokeCell.swift in Sources */,
 				EBF9B4DD1EB4E9180097531E /* PokemonVC.swift in Sources */,
+				EBF9B51C1EB5390B0097531E /* PokemonDetailVC.swift in Sources */,
 				EBF9B4DB1EB4E9180097531E /* AppDelegate.swift in Sources */,
 				EBF9B50C1EB50AAE0097531E /* Pokemon.swift in Sources */,
 				EBF9B5111EB51E090097531E /* csv.swift in Sources */,
@@ -501,7 +505,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 8RD37RWZ37;
+				DEVELOPMENT_TEAM = P23AMFJ96N;
 				INFOPLIST_FILE = PokedexTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jamel.PokedexTests;
@@ -516,7 +520,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 8RD37RWZ37;
+				DEVELOPMENT_TEAM = P23AMFJ96N;
 				INFOPLIST_FILE = PokedexTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jamel.PokedexTests;
