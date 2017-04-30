@@ -221,7 +221,7 @@
                                                             <constraint firstAttribute="width" constant="120" id="soo-Hk-cql"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bulbasaur is a cute Pokémon born with a large seed firmly affixed to its back; the seed grows in size as the Pokémon does." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="hve-7A-e7k">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="hve-7A-e7k">
                                                         <rect key="frame" x="120" y="0.0" width="168" height="120"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -387,8 +387,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yMw-0s-oZm">
                                 <rect key="frame" x="0.0" y="351" width="320" height="52"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Evolution: Venusaur LVL 32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWw-Ln-Chb">
-                                        <rect key="frame" x="65" y="16.5" width="190.5" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWw-Ln-Chb">
+                                        <rect key="frame" x="157" y="16.5" width="7" height="18"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -402,20 +402,31 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ckY-df-deS">
-                                <rect key="frame" x="22.5" y="440" width="275" height="120"/>
+                                <rect key="frame" x="26" y="440" width="268" height="120"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Kjp-Cb-G5k">
-                                        <rect key="frame" x="0.0" y="0.0" width="275" height="120"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="268" height="120"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="KA5-Rc-FC3">
-                                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KA5-Rc-FC3">
+                                                <rect key="frame" x="0.0" y="0.0" width="113" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="F33-Em-Hz2"/>
+                                                    <constraint firstAttribute="width" constant="113" id="pQh-N8-bOV"/>
+                                                </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="xHT-At-dvl">
-                                                <rect key="frame" x="155" y="0.0" width="120" height="120"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xHT-At-dvl">
+                                                <rect key="frame" x="148" y="0.0" width="120" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="Gte-0f-FlR"/>
+                                                    <constraint firstAttribute="width" constant="120" id="k7a-3d-cmf"/>
+                                                </constraints>
                                             </imageView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="5QI-rK-Eof"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -424,12 +435,15 @@
                             <constraint firstItem="gXP-wN-408" firstAttribute="top" secondItem="ckY-df-deS" secondAttribute="bottom" constant="8" id="Ij8-FC-3ga"/>
                             <constraint firstAttribute="trailing" secondItem="p0i-mk-0Zm" secondAttribute="trailing" id="JQW-os-UDp"/>
                             <constraint firstItem="srU-oi-B2y" firstAttribute="top" secondItem="p0i-mk-0Zm" secondAttribute="bottom" constant="8" id="LlD-5e-Zag"/>
+                            <constraint firstItem="ckY-df-deS" firstAttribute="centerX" secondItem="sYC-iO-ozX" secondAttribute="centerX" id="R1A-8q-yfL"/>
                             <constraint firstItem="ckY-df-deS" firstAttribute="top" secondItem="yMw-0s-oZm" secondAttribute="bottom" constant="37" id="VGM-Zg-7Q6"/>
                             <constraint firstAttribute="trailing" secondItem="yMw-0s-oZm" secondAttribute="trailing" id="Xkc-IR-hg9"/>
+                            <constraint firstItem="ckY-df-deS" firstAttribute="leading" secondItem="sYC-iO-ozX" secondAttribute="leadingMargin" constant="10" id="evV-BK-Wh8"/>
                             <constraint firstItem="yMw-0s-oZm" firstAttribute="leading" secondItem="sYC-iO-ozX" secondAttribute="leading" id="itK-FV-D1K"/>
                             <constraint firstAttribute="trailingMargin" secondItem="srU-oi-B2y" secondAttribute="trailing" id="jUo-wj-sIS"/>
                             <constraint firstItem="p0i-mk-0Zm" firstAttribute="leading" secondItem="sYC-iO-ozX" secondAttribute="leading" id="k4k-u3-UWf"/>
                             <constraint firstItem="ckY-df-deS" firstAttribute="centerX" secondItem="sYC-iO-ozX" secondAttribute="centerX" id="m1K-in-5Cy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ckY-df-deS" secondAttribute="trailing" constant="10" id="poi-tw-4xy"/>
                             <constraint firstItem="srU-oi-B2y" firstAttribute="leading" secondItem="sYC-iO-ozX" secondAttribute="leadingMargin" id="thc-fM-9ln"/>
                         </constraints>
                     </view>
@@ -444,7 +458,7 @@
                         <outlet property="nameLbl" destination="jvH-K5-8Wp" id="BIA-bY-WgK"/>
                         <outlet property="nextEvoImage" destination="xHT-At-dvl" id="5Xb-M4-Uqs"/>
                         <outlet property="pokedexLbl" destination="mtI-6c-zfq" id="eEO-Iu-Jjh"/>
-                        <outlet property="typeLbl" destination="thM-YS-l0l" id="kL6-e9-dLb"/>
+                        <outlet property="typeLbl" destination="T7V-Ro-tAS" id="Ylq-gC-r4t"/>
                         <outlet property="weightLbl" destination="YBW-Nv-cLk" id="hzC-vR-WU2"/>
                     </connections>
                 </viewController>
@@ -454,8 +468,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="2" width="120" height="120"/>
-        <image name="3" width="120" height="120"/>
         <image name="4" width="120" height="120"/>
         <image name="back" width="100" height="67"/>
         <image name="bg" width="1920" height="1200"/>

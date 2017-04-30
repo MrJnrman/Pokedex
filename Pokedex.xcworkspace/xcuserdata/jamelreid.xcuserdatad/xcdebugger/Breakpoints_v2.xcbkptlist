@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pokedex/Pokemon.swift"
-            timestampString = "515201749.272287"
+            timestampString = "515206419.562578"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
+            startingLineNumber = "242"
+            endingLineNumber = "242"
             landmarkName = "downloadPokemonDetails(completed:)"
             landmarkType = "7">
          </BreakpointContent>
